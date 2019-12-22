@@ -6,9 +6,11 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.di3.adminModel.Admin;
+
 @Path("/")
  public class Index {
-	AdminService admin = new AdminService();
+	Admin admin = new Admin();
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String noLog() {

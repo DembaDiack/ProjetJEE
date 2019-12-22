@@ -1,9 +1,9 @@
-package com.di3;
-public class AdminService {
+package com.di3.adminModel;
+public class Admin {
 	private static String username = "admin";
 	private static String password = "admin";
 	
-	public AdminService() {
+	public Admin() {
 		
 	}
 	
@@ -12,7 +12,7 @@ public class AdminService {
 	}
 
 	public void setUsername(String username) {
-		AdminService.username = username;
+		Admin.username = username;
 	}
 
 	public String getPassword() {
@@ -20,13 +20,13 @@ public class AdminService {
 	}
 
 	public void setPassword(String password) {
-		AdminService.password = password;
+		Admin.password = password;
 	}
 
 	public String changeAdminUsrPswd(String username,String password) {
 		try {
-			AdminService.username = username;
-			AdminService.password = password;
+			Admin.username = username;
+			Admin.password = password;
 			return "nom duttilisateur et mot de passe change avec success";
 		} catch (Exception e) {
 			return "an error has occured";
