@@ -1,4 +1,4 @@
-package com.di3.adminModel;
+package com.di3.admin;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

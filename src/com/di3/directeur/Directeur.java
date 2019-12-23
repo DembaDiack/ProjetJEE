@@ -1,4 +1,4 @@
-package com.di3.directeurModel;
+package com.di3.directeur;
 
 import java.util.Date;
 

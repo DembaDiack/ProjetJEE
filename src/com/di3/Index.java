@@ -6,7 +6,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.di3.adminModel.Admin;
+import com.di3.admin.Admin;
 
 @Path("/")
  public class Index {

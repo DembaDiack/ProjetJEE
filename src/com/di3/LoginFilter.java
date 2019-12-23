@@ -6,7 +6,7 @@ import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.MultivaluedMap;
 
-import com.di3.adminModel.AdminHandler;
+import com.di3.admin.AdminHandler;
 
 public class LoginFilter implements ContainerRequestFilter{
 	private AdminHandler handler = new AdminHandler();

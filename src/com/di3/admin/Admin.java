@@ -1,4 +1,4 @@
-package com.di3.adminModel;
+package com.di3.admin;
 public class Admin {
 	private static String username = "admin";
 	private static String password = "admin";
