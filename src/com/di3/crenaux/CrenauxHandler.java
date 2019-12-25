@@ -8,7 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-@Path("crenaux")
+@Path("{token}/crenaux")
 public class CrenauxHandler {
 	@GET
 	@Path("/ajouter")

@@ -8,14 +8,17 @@ public class Directeur {
 	private String prenom;
 	private String username;
 	private String password;
-	
+	private int role = 2;
 	public Directeur(String nom,String prenom,String username,String password) {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.username = username;
 		this.password = password;
+		this.role = 2;
 	}
-
+	public int getRole() {
+		return this.role;
+	}
 	public int getId() {
 		return id;
 	}

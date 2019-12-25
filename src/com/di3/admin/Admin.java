@@ -2,11 +2,14 @@ package com.di3.admin;
 public class Admin {
 	private static String username = "admin";
 	private static String password = "admin";
-	
+	private int role = 1;
 	public Admin() {
-		
+		this.role = 1;
 	}
 	
+	public int getRole() {
+		return this.role;
+	}
 	public String getUsername() {
 		return username;
 	}

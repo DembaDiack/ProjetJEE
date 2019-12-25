@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.di3.matiere.*;
+import com.di3.token.Token;
 public class Enseignant {
 	private int id;
 	private String nom;
 	private String prenom;
 	private String username;
 	private String password;
+	private int role = 3;
 	private List<Matiere> matieres = new ArrayList<Matiere>();
 	
 	public Enseignant() {
@@ -21,6 +23,10 @@ public class Enseignant {
 		this.prenom = prenom;
 		this.password = password;
 		this.username = username;
+		this.role = 3;
+	}
+	public int getRole() {
+		return this.role;
 	}
 	public String ajouterMatieres(Matiere ma) {
 		this.matieres.add(ma);

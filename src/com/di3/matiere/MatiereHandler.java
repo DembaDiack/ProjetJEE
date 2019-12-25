@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 
 import com.di3.crenaux.Crenaux;
 
-@Path("/matiere")
+@Path("/{token}/matiere")
 public class MatiereHandler {
 	public static List<Matiere> matieres_list = new ArrayList<Matiere>();
 	@GET

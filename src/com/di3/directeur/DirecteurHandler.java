@@ -9,7 +9,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-@Path("/directeur")
+@Path("/{token}/directeur")
 public class DirecteurHandler {
 
 	private static List<Directeur> Directeurs_list = new ArrayList<Directeur>();

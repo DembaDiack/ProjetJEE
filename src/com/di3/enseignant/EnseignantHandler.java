@@ -13,7 +13,7 @@ import javax.ws.rs.core.MediaType;
 import com.di3.matiere.Matiere;
 import com.di3.matiere.MatiereHandler;
 
-@Path("/enseignant")
+@Path("/{token}/enseignant")
 public class EnseignantHandler {
 	private static List<Enseignant> enseignant_list = new ArrayList<Enseignant>();
 	@GET

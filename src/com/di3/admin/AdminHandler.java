@@ -7,7 +7,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-@Path("/settings")
+@Path("/{token}/settings")
 public class AdminHandler {
 	Admin handler = new Admin();
 	@GET
