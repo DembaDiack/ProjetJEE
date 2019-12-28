@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.websocket.server.PathParam;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
@@ -35,7 +37,15 @@ public class EnseignantHandler {
 		Enseignant ens = new Enseignant(id,nom, prenom, username, password);
 		enseignant_list.add(ens);
 		return ens;
-	} 
+	}
+	@POST
+	@Path("/ajouter")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Enseignant ajouterEns(Enseignant ens) {
+		enseignant_list.add(ens);
+		return ens;
+	}
 	@GET
 	@Path("/all")
 	@Produces(MediaType.APPLICATION_JSON)

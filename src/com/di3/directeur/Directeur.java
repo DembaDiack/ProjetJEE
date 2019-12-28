@@ -9,6 +9,9 @@ public class Directeur {
 	private String username;
 	private String password;
 	private int role = 2;
+	public Directeur() {
+		
+	}
 	public Directeur(String nom,String prenom,String username,String password) {
 		this.nom = nom;
 		this.prenom = prenom;

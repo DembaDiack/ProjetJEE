@@ -3,7 +3,9 @@ package com.di3.matiere;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
@@ -49,7 +51,22 @@ public class MatiereHandler {
 		return new Matiere(-1,"Erreur crenaux inexistant");
 	}
 	
-	
+	@POST
+	@Path("/ajouter")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Matiere ajouterMatiere_post(Matiere matiere) {
+		int idc = matiere.getId();
+		//nous cherchons le crenaux avec le idcrenau passe dans le lien
+				for(int cmpt = 0; cmpt <= Crenaux.crenaux_list.size() - 1; cmpt++) {
+					if(Crenaux.crenaux_list.get(cmpt).getId() == idc) {
+						matieres_list.add(matiere);
+						return matiere;
+					}
+				}
+				//on ajoute rien et on revoi une erreur
+				return new Matiere(-1,"Erreur crenaux inexistant");
+	}
 	//retourners une liste contenant des objets de classe matiere
 	@GET
 	@Path("/all")

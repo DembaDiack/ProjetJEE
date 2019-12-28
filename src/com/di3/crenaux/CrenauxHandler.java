@@ -2,7 +2,9 @@ package com.di3.crenaux;
 
 import java.util.List;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
@@ -17,6 +19,14 @@ public class CrenauxHandler {
 		Crenaux c = new Crenaux(id,h,m);
 		Crenaux.crenaux_list.add(c);
 		return c;
+	}
+	@POST
+	@Path("/ajouter")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Crenaux ajouterCr_post(Crenaux crenau) {
+		Crenaux.crenaux_list.add(crenau);
+		return crenau;
 	}
 	@GET
 	@Path("/all")

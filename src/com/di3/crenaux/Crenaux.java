@@ -9,7 +9,9 @@ public class Crenaux {
 	private int id;
 	public static List<Crenaux> crenaux_list = new ArrayList<Crenaux>();
 	
-	
+	public Crenaux() {
+		
+	}
 	public Crenaux(int id,int hour,int minute) {
 		this.setId(id);
 		this.setTime(LocalTime.of(hour, minute));
