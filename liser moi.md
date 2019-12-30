@@ -1,21 +1,13 @@
 # ProjetJEE
-tu peut soit copier le projet avec git clone ou le telecharger en tant que zip.
-si tu sais pas comment copier avec git bash :
+1-cree un projet "Dynamic web project" sur eclipse
+2- dans eclipse : clicke sur File -> Switch Workspace et va vers le chemin affiche
+3-dans le chemin cherche le dossier de ton projet et click droit puis "open git bash here"
+4- ecrit la commande : git clone https://github.com/DembaDiack/ProjetJEE.git
 
 
+-------------------methode : 2----------------------
 
-
-cherche sour google :p
-
-manuel --------------------------------------------------------
-premiere question du projet : si luttilisateur ecrit l'url : http://localhost:9090/ProjetJEE/rest/ rien ne se passe
-il doit sauthentifier avec http://localhost:9090/ProjetJEE/rest/nom_duttilisateur/mot_de_passe
-
-deuxieme question : 
-si il veut changer son nom_duttil et son mot_de_passe : http://localhost:9090/ProjetJEE/rest/settings/change/nom_duttilisateur/mot_de_passe
-ou 
-http://localhost:9090/ProjetJEE/rest/settings/change?username=nom_duttilisateur&password=mot_de_passe
-
-ignorer les fichier Directeurs pour linstant
-
-avancer vers la troisieme question -------------> : 
+apres letape N*2:
+3-ouvre le lien :https://github.com/DembaDiack/ProjetJEE.git dans ton navigateur
+4-clicke sur "clone or download" puis "download as zip"
+5-copie tout les fichiers dans ton projet,ecrase si il le faut.
