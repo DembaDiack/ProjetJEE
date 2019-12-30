@@ -1,6 +1,6 @@
 # ProjetJEE
 1-cree un projet "Dynamic web project" sur eclipse
-2- dans eclipse : clicke sur File -> Switch Workspace et va vers le chemin affiche
+2- danseclipse : clicke sur File -> Switch Workspace et va vers le chemin affiche
 3-dans le chemin cherche le dossier de ton projet et click droit puis "open git bash here"
 4- ecrit la commande : git clone https://github.com/DembaDiack/ProjetJEE.git
 
