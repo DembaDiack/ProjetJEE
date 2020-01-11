@@ -1,6 +1,8 @@
 package com.di3.admin;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -33,6 +35,21 @@ public class AdminHandler {
 			return handler.changeAdminUsrPswd(username, password);
 		} catch (Exception e) {
 			return "erreur";
+		}
+	}
+	@POST
+	@Path("/ajouter")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Admin changeUsr_post(Admin admin) {
+		try {
+			String username = admin.getUsername();
+			String password = admin.getPassword();
+			
+			handler.changeAdminUsrPswd(username, password);
+			return handler;
+		} catch (Exception e) {
+			return new Admin();
 		}
 	}
 }
