@@ -25,6 +25,11 @@ public class Enseignant {
 		this.username = username;
 		this.role = 3;
 	}
+	public Enseignant(int i, String text) {
+		// TODO Auto-generated constructor stub
+		this.id = i;
+		this.nom = text;
+	}
 	public int getRole() {
 		return this.role;
 	}

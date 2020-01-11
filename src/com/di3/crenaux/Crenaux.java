@@ -16,6 +16,10 @@ public class Crenaux {
 		this.setId(id);
 		this.setTime(LocalTime.of(hour, minute));
 	}
+	public Crenaux(int i, String err) {
+		this.id = i;
+		// TODO Auto-generated constructor stub
+	}
 	public LocalTime getTime() {
 		return time;
 	}

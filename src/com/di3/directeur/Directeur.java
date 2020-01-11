@@ -19,6 +19,11 @@ public class Directeur {
 		this.password = password;
 		this.role = 2;
 	}
+	public Directeur(int i, String err) {
+		this.id = i;
+		this.nom = err;
+		// TODO Auto-generated constructor stub
+	}
 	public int getRole() {
 		return this.role;
 	}

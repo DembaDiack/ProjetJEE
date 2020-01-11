@@ -37,6 +37,8 @@ public class AdminHandler {
 			return "erreur";
 		}
 	}
+	
+	//-----------------------------------------------POST--------------------------------------------------
 	@POST
 	@Path("/ajouter")
 	@Consumes(MediaType.APPLICATION_JSON)

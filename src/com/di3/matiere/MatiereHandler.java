@@ -126,11 +126,8 @@ public class MatiereHandler {
 				matieres_list.set(i, matiere);
 				return matieres_list.get(i);
 			}
-			else {
-				return new Matiere(-1,"impossible de mettre a jour une matiere qui nexiste pas");
-			}
 		}
-		return matiere;
+		return new Matiere(-1,"impossible de mettre a jour une matiere qui nexiste pas");
 	}
 	//------------------------------------------------DELETE---------------------------------------------------
 	@DELETE
