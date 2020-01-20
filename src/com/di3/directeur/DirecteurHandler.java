@@ -25,6 +25,7 @@ public class DirecteurHandler {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Directeur ajouterDirecteur(
 			@QueryParam("nom") String nom,
+			@QueryParam("id") int id,
 			@QueryParam("prenom") String prenom,
 			@QueryParam("username") String username,
 			@QueryParam("password") String password) {

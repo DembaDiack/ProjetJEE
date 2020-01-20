@@ -12,7 +12,8 @@ public class Directeur {
 	public Directeur() {
 		
 	}
-	public Directeur(String nom,String prenom,String username,String password) {
+	public Directeur(int id,String nom,String prenom,String username,String password) {
+		this.id = id;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.username = username;
